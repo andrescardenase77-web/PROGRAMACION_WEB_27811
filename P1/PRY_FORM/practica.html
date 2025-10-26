@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA</title>
+</head>
+<body>
+    <header>
+        <h1>PRACTICA DE FORMULARIOS</h1>
+    </header>
+    <main>
+        <h2>EJERCICIO 1</h2>
+        <form action="server.html" method="get">
+            <!-- NOMBRE/TEXT -->
+            <label for="nombre">INGRESA TU NOMBRE COMPLETO</label>
+            <input 
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Andres Sebastian Cardenas Erazo"
+            maxlength="50"
+            >
+            <!-- CONTRASENA/PASSWORD -->
+            <label for="contrasena">INGRESA TU CONTRASEÑA</label>
+            <input 
+            type="password"
+            id="contrasena"
+            name="contrasena"
+            minlength="8"
+            placeholder="12345678"
+            >
+
+            <!-- CORREO/EMAIL -->
+            <label for="correo">INGRESA TU CORREO</label>
+            <input 
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="ascardenas4@espe.edu.ec"
+            required
+            >
+
+            <!-- EDAD/NUMBER -->
+            <label for="edad">INGRESA TU EDAD</label>
+            <input 
+            type="number"
+            id="edad"
+            name="edad"
+            min="18"
+            max="99"
+            placeholder="18"
+            >
+
+            <!-- FECHA DE NACIMIENTO/DATE -->
+            <label for="fechaNacimiento">SELECCIONA TU FECHA DE NACIMIENTO</label>
+            <input 
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            min="1980-01-01"
+            max="2025-12-31"
+            >
+
+            <!-- GENERO/RADIO -->
+            <label for="">SELECCIONA TU GENERO: </label>
+
+            <label for="hombre">HOMBRE</label>
+            <input 
+            type="radio"
+            id="hombre"
+            name="genero"
+            value="HOMBRE"
+            checked
+            >
+
+            <label for="mujer">MUJER</label>
+            <input 
+            type="radio"
+            id="mujer"
+            name="genero"
+            value="MUJER"
+            >
+
+            <label for="otro">OTRO</label>
+            <input 
+            type="radio"
+             id="otro" 
+            name="genero"
+            value="OTRO"
+            >
+
+            <!-- ENVIO/SUBMIT -->
+             <label for="envio">REGISTRAR USUARIO</label>
+             <input 
+             type="submit"
+             id="envio"
+             name="envio"
+             >
+
+             <!-- REINICIAR/RESET -->
+            <label for="limpiar">LIMPIAR CAMPOS</label>
+            <input 
+            type="reset" 
+            id="limpiar" 
+            name="limpiar"
+            >
+        </form>
+
+        <h2>SEGUNDO EJERCICIO</h2>
+        <form action="server.html" method="get">
+
+            <!-- NIVEL DE SATISFACCION/RANGE -->
+            <label for="nivel">SELECCIONA TU NIVEL</label>
+            <input 
+            type="range" 
+            id="nivel" 
+            name="nivel" 
+            min="0" 
+            max="100" 
+            value="50"
+            >
+
+            <!-- COLOR FAVORITO/ COLOR -->
+             <label for="color">SELECCIONA TU COLOR FAVORITO</label>
+             <input 
+             type="color" 
+             id="color" 
+             name="color"
+             >
+
+             <!-- DIAS FAVORITOS/CHECKBOX -->
+              <label for="">SELECCIONA TUS DIAS FAVORITOS</label>
+
+              <label for="lunes">LUNES</label>
+              <input type="checkbox" id="lunes" name="dias[]" value="LUNES">
+
+              <label for="martes">MARTES</label>
+              <input type="checkbox" id="martes" name="dias[]" value="MARTES">
+
+              <label for="miercoles">MIERCOLES</label>
+              <input type="checkbox" id="miercoles" name="dias[]" value="MIERCOLES">
+
+              <label for="jueves">JUEVES</label>
+              <input type="checkbox" id="jueves" name="dias[]" value="JUEVES">
+
+              <label for="viernes">VIERNES</label>
+              <input type="checkbox" id="viernes" name="dias[]"  value="VIERNES" disabled>
+
+              <!-- IMAGEN/file -->
+               <label for="foto">SUBE TU FOTO DE PERFIL</label>
+               <input type="file" id="foto" name="foto" accept=".jpg, .png, .jpeg">
+
+               <!-- BUSQUEDA/SEARCH -->
+                <label for="buscar">ESCRIBE EL VALOR A BUSCAR: </label>
+                <input 
+                type="search" 
+                id="buscar" 
+                name="buscar"
+                >
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION A LOS FORMULARIOS</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+
+        <!-- etiqueta form -->
+        <form action="server.html" method="get">
+            <label for="apellidos">INGRESE SU APELLIDO</label>
+            <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Ejm. Cardenas"
+            maxlength="5"
+            minlength="3"
+            >
+            <!-- TIPO TEXTO -->
+            <label for="nombres">INGRESE SU NOMBRE</label>
+            <input
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Ejm. Andres"
+            maxlength="5"
+            minlength="3"
+            >
+            <!-- TIPO NUMBER -->
+            <label for="edad">INGRESE SU EDAD</label>
+            <input
+            type="number"
+            name="edad"
+            id="edad"
+            min="5"
+            max="75"
+            placeholder="19"
+            >
+            <!-- TIPO EMAIL -->
+            <label for="email">INGRESE SU CORREO</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ascardenas4@espe.edu.ec"
+            >
+
+            <!-- DATE -->
+             <label for="fecha_nacimiento">INGRESE SU FECHA DE NACIMIENTO</label>
+             <input
+             type="date"
+             name="fecha_nacimiento"
+             id="fecha_nacimiento"
+             placeholder="14/02/1993"
+             value="2025-10-22"
+             min="2025-10-18"
+             max="2025-10-26"
+             >
+
+             <!-- RADIO -->
+              <label for="">SELECCIONE SU SEXO: </label>
+              <label for="hombre">HOMBRE</label>
+              <input type="radio" name="sexo" id="hombre" value="HOMBRE" checked>
+
+              <label for="mujer">MUJER</label>
+              <input type="radio" name="sexo" id="mujer" value="MUJER">
+
+              <label for="desconocido">DESCONOCIDO</label>
+              <input type="radio" name="sexo" id="desconocido" value="DESCONOCIDO" disabled>
+
+              <!-- CHECKBOX -->
+               <label for="">SELECCIONE SUS DIAS DE CLASE DE PROGRAMACION WEB</label>
+               <label for="lunes">LUNES</label>
+               <input type="checkbox" name="dias[]" id="lunes">
+
+               <label for="martes">MARTES</label>
+               <input type="checkbox" id="martes" name="dias[]">
+
+               <label for="miercoles">MIERCOLES</label>
+               <input type="checkbox" id="miercoles" name="dias[]">
+
+               <label for="jueves">JUEVES</label>
+               <input type="checkbox" id="jueves" name="dias[]">
+
+               <label for="viernes">VIERNES</label>
+               <input type="checkbox" id="viernes" name="dias[]">
+
+               <!-- FILE -->
+                <label for="foto">SUBIDA DE FOTO DE PERFIL</label>
+                <input 
+                type="file" 
+                name="foto" 
+                id="foto"
+                accept="aplication/pdf"
+                >
+
+                <!-- COLOR -->
+                 <label for="color">SELECCIONE SU COLOR FAVORITO</label>
+                 <input type="color" name="color" id="color" value="#58bf2b">
+                <!-- RANGUE -->
+                 <laber for="estatura">SELECCION SU ESTATURA</laber>
+                 <input type="range" name="estatura" id="estatura" value="25" min="10" max="250">
+
+                <!-- SEARCH -->
+                <label for="cedula">BUSCAR POR CEDULA</label>
+                <input type="search" name="cedula" id="cedula">
+                 
+                 <!-- RESET -->
+                  <label for="vaciar">VACIAR FORMULARIO</label>
+                  <input type="reset" id="vaciar" name="vaciar">
+
+                <!-- SUBMIT -->
+                 <label for="enviar">ENVIAR</label>
+                 <input type="submit" id="enviar" name="enviar">
+
+                 <!-- PASSWORD, HIDDEN -->
+                  <label for="password">INGRESE SU CONTRASENA</label>
+                  <input type="password" id="password" name="password" placeholder="*****">
+        </form>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
