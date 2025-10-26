@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>FACTURA PRODUCTO</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th colspan="4">FORMULARIO PARA ADQUISICION DE UN PRODUCTO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nombre">NOMBRE</label>
+                        </td>
+                        <td>
+                            <input type="text"
+                            id="nombre" 
+                            name="nombre"
+                            placeholder="Agua"
+                            minlength="3"
+                            >
+                        </td>
+
+                        <td>
+                            <label for="codigo">CODIGO</label>
+                        </td>
+                        <td>
+                            <input type="password"
+                            id="codigo" 
+                            name="codigo"
+                            placeholder="A001"
+                            minlength="3"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="descri">DESCIPCION</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="text"
+                            id="descri"
+                            name="descri"
+                            placeholder="A agua con gas de 100 ml"
+                            >
+                        </td>
+                        <td>
+                            <label for="imag">IMAGEN DEL PRODUCTO</label>
+                        </td>
+                        <td>
+                            <input type="file" id="imag" name="imag" accept=".png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="precio">PRECIO</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="number"
+                            id="precio"
+                            name="precio"
+                            placeholder="15"
+                            min="1"
+                            >
+                        </td>
+                               <td>
+                            <label for="color">COLOR</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="color"
+                            id="color"
+                            name="color"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="f_elab">FECHA DE ELABORACION</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="date"
+                            id="f_elab"
+                            name="f_elab"
+                            min="2025-01-01"
+                            value="2025-01-01"
+                            >
+                        </td>
+                        <td>
+                            <label for="f_venc">FECHA DE VENCIMIENTO</label>
+                        </td>
+                        <td>
+                            <input 
+                            type="date"
+                            id="f_venc"
+                            name="f_venc"
+                            min="2025-02-01"
+                            max="2027-01-01"
+                            value="2027-01-01"
+                            >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">ESTADO</label>
+                        </td>
+                        <td>
+                            <label for="nuevo">NUEVO</label>
+                            <input 
+                            type="radio"
+                            id="nuevo"
+                            name="estado"
+                            value="NUEVO"
+                            checked
+                            >
+                            <label for="usado">USADO</label>
+                            <input 
+                            type="radio"
+                            id="usado"
+                            name="estado"
+                            value="USADO"
+                            >
+                        </td>
+
+                        <td>
+                            <label for="">TIPO</label>
+                        </td>
+                        <td>
+                            <label for="herramienta">Herramienta</label>
+                            <input 
+                            type="checkbox"
+                            id="herramienta"
+                            name="tipo"
+                            value="herramienta"
+                            checked
+                            >
+                            <label for="comestible">Comestible</label>
+                            <input 
+                            type="checkbox"
+                            id="comestible"
+                            name="tipo"
+                            value="comestible"
+                            >
+                             <label for="inflamable">Inflamable</label>
+                            <input 
+                            type="checkbox"
+                            id="inflamable"
+                            name="tipo"
+                            value="inflamable"
+                            >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="conserva">DIAS QUE PUEDE PASAR SIN REFRIGERACION</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="range"
+                                id="conserva"
+                                name="conserva"
+                                min="10"
+                                max="30"
+                                value="25"
+                                >
+                        </td>
+                       <td>
+                          <label for="buscar">BUSCAR POR CODIGO</label>
+                        </td>
+                        <td>
+                                <input 
+                                type="search"
+                                id="buscar"
+                                name="buscar"
+                                >
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <label for="restablecer">RESTABLECER VALORES</label>
+                        </td>
+                        <td>
+                            <input
+                            type="reset"
+                            id="restablecer"
+                            name="restablecer"
+                            >
+                        </td>
+                        <td>
+                            <label for="enviar">ENVIAR FORMULARIO</label>
+                        </td>
+                        <td>
+                            <input type="submit" id="enviar" name="enviar">
+                        </td>
+                    </tr>
+
+                </tfoot> 
+            </table>
+        </form>
+    </main>
+    <footer>
+        Elaborado por G3, REGISTRADO
+    </footer>
+</body>
+</html>
