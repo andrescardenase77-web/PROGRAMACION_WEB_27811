@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .color {
+            color: blue;
+        }
+
+        .colorFondo {
+            background-color: aqua;
+        }
+
+        .margen {
+            margin: 10px;
+            /* usa 2 p */
+        }
+
+        .bordeTotal {
+            border: 10px dotted green;
+        }
+
+        .bordeRedondeado {
+            border-radius: 5cm;
+        }
+
+        .ancho {
+            width: 80%;
+        }
+
+        .altura {
+            height: 10cm;
+        }
+
+        .anchMax {
+            max-width: 100px;
+            overflow: hidden;
+            background-color: aqua;
+            /* usa un p */
+        }
+
+        .alturaMinima {
+            min-height: 100px;
+        }
+
+        .transparencia {
+            opacity: 0.3;
+            background-color: aqua;
+        }
+
+        .tamanLetra {
+            font-size: x-large;
+        }
+
+        .margenSup {
+            margin-top: 100px;
+            /* con 1 p */
+        }
+
+        .sombraCaja {
+            box-shadow: 20px -10px green;
+        }
+
+        .textoSobrante {
+            text-overflow: ellipsis;
+            /* mejor a un input text */
+        }
+
+        /* INICIO Z INDEX */
+        .contenido1 {
+            position: relative;
+            border: 10px solid yellow;
+            z-index: 2;
+            /* Cada uno que se aplique en un div */
+        }
+
+        .contenido2 {
+            position: absolute;
+            background-color: green;
+            top: -2px;
+            height: 80px;
+            z-index: 1;
+        }
+
+        /* FIN Z INDEX */
+
+        .contDesbordado {
+            overflow: visible;
+            background-color: aqua;
+            width: 100px;
+            /* mejor usa un p */
+        }
+
+        .flotante {
+            float: right;
+            border: 10px solid blue;
+            /* puedes usar un input pal float y un textarea luego sin float */
+        }
+
+        .sinFlotante {
+            clear: both;
+            border: 10px dotted green;
+            /* Para su implementacion necesitas un float y ponerles borde notorio */
+        }
+
+        .lineaVertical {
+            line-height: 30px;
+        }
+
+        .espacioLetra {
+            letter-spacing: 1cm;
+            width: 20cm;
+        }
+
+        .tipoLetraCapital {
+            text-transform: uppercase;
+        }
+
+        .estiloLista {
+            list-style-type: lower-roman;
+        }
+
+        .raton {
+            cursor: help;
+        }
+
+        .visibilidad {
+            visibility: visible;
+            border: 10px solid green;
+        }
+
+        .girar {
+            rotate: -45deg;
+        }
+
+        .espacioPalabra {
+            word-spacing: 10px;
+        }
+
+        .dirEscritura {
+            writing-mode: vertical-rl;
+        }
+
+        .fondoImagen {
+            background-image: url(https://www.peceswiki.com/Imagenes/pez-payaso.jpg);
+            /* es mejor en un textarea */
+        }
+
+        .sangria {
+            text-indent: 30%;
+        }
+
+        .colorFondoInterfaz {
+            accent-color: aqua;
+        }
+
+        .negrita {
+            font-weight: bold;
+        }
+
+        .espacioInterior {
+            padding: 1cm;
+        }
+
+        .lineaDecorativa {
+            text-decoration-line: line-through;
+        }
+
+        .enfasis {
+            text-emphasis: "x";
+        }
+
+        .redimensionar {
+            resize: vertical;
+            border: 10px solid blue;
+            /* hazle con un textarea pero solo vertical u horizontal para que se note */
+        }
+
+        .agrandar {
+            zoom: 50%;
+            /* Ojo con que sea mayor o menor (hasta 0 nomas) que 100% */
+        }
+
+        .transformar {
+            transform: scale(5);
+            /* usa scale en radio, esa si funciona */
+        }
+
+        .dibujarLinea {
+            outline: 10px solid yellow;
+        }
+
+        .filtro {
+            filter: brightness(500%);
+            /* aplicalo en una imagen */
+        }
+
+        .espacioInteriorIzq {
+            padding-left: 15px;
+        }
+
+        .colorBordeInferior {
+            border-block-end-color: yellow;
+            border-width: 1cm;
+        }
+
+        .sombraTexto {
+            text-shadow: 5px 5px blueviolet;
+        }
+
+        .proporcion {
+            aspect-ratio: 4 / 3;
+            max-width: 10cm;
+            max-height: 8cm;
+            /* no te olvides de definir ancho y altura maximos */
+        }
+
+        .bordeImagen {
+            width: 300px;
+            height: 200px;
+            border: 40px solid;
+            border-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/236/998/small/decorative-border.jpg) 30;
+        }
+
+        .estiloBorde{
+            border-style: dotted;
+            border-width: 100px;
+        }
+
+        .alinearVerticalInterno{
+            vertical-align: top;
+            height: 10px;
+            width: 10px;
+        }
+
+        .anchoBorde{
+            border-width: 50px;
+        }
+
+        .estiloLetra{
+            font-style: italic;
+        }
+
+        .tipoLetra{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .alinearTexto{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flotante">TEXTO1</div>
+    <div class="sinFlotante">TEXT2</div>
+</body>
+
+</html>

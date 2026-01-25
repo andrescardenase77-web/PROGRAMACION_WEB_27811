@@ -1,0 +1,57 @@
+<section>
+  <div class="container">
+    <h1>Llena el siguiente formulario para contactarme</h1>  
+    <form action="../server.html" method="get">
+      <!-- NOMBRE -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" name="nombre" id="nombre"
+               placeholder="Andrés Cárdenas"
+               required maxlength="50">
+      </div>
+
+      <!-- CORREO -->
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo:</label>
+        <input type="email" class="form-control" name="correo" id="correo"
+               placeholder="abc@mail.com" required>
+      </div>
+
+      <!-- CONTRASEÑA -->
+      <div class="mb-3">
+        <label for="contrasena" class="form-label">Contraseña de la página ....(panda):</label>
+        <input type="password" class="form-control" name="contrasena" id="contrasena"
+               placeholder="Andy" required pattern="Andy" value="Andy">
+      </div>
+
+      <!-- EDAD -->
+      <div class="mb-3">
+        <label for="edad" class="form-label">Edad:</label>
+        <input type="number" class="form-control" name="edad" id="edad"
+               placeholder="19" min="1" max="99" required>
+      </div>
+
+      <!-- MENSAJE -->
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje:</label>
+        <textarea class="form-control" name="mensaje" id="mensaje" rows="3"
+                  placeholder="Escribe tu mensaje..." required maxlength="200"></textarea>
+      </div>
+
+      <!-- MOTIVO DEL MENSAJE -->
+      <fieldset class="mb-3">
+        <legend>Motivo del mensaje</legend>
+        <select class="form-select" name="motivo" id="motivo" required>
+          <option value="Consulta">Consulta</option>
+          <option value="Sugerencia">Sugerencia</option>
+          <option value="Saludo" selected>Saludo</option>
+        </select>
+      </fieldset>
+
+      <!-- BOTÓN DE ENVÍO -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar</button>
+      </div>
+    </form>
+  </div>
+</section>

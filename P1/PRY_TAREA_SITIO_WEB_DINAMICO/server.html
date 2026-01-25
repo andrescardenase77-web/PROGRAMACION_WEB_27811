@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #198754;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-5 text-success mb-4">¡Datos Recibidos Correctamente!</h1>
+
+        <a name="btn-volver" id="btn-volver" class="btn btn-success btn-lg shadow-sm" href="./index.html" role="button"
+            onclick="cargarPagina(event, this.href)">Volver al Inicio</a>
+    </div>
+</body>
+
+</html>

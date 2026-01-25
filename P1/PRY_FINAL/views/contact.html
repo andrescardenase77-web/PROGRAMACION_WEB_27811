@@ -1,0 +1,134 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h5 class="section-title ff-secondary text-center text-primary fw-normal">Contáctanos</h5>
+      <h1 class="mb-5 text-white">Contacto para cualquier consulta</h1>
+    </div>
+    <div class="row g-4">
+      <div class="col-12">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5 class="section-title ff-secondary fw-normal text-start text-primary">Reservas</h5>
+            <p class="mb-2 text-white"><i class="fa fa-envelope-open text-primary me-2"></i>gabriel25molina@hotmail.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
+            <p class="mb-2 text-white"><i class="fa fa-envelope-open text-primary me-2"></i>rudpesantez34@outlook.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="section-title ff-secondary fw-normal text-start text-primary">Soporte técnico</h5>
+            <p class="mb-2 text-white"><i class="fa fa-envelope-open text-primary me-2"></i>tech_arrival_problems@proton.me</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mb-5 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: 900px;">
+          <video class="w-100 h-100" controls preload="metadata">
+            <source src="../public/video/vide.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de vídeo!
+          </video>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+        <iframe class="position-relative rounded w-100 h-100"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-78.44596624374391%2C-0.3175504639736808%2C-78.43923926353455%2C-0.31284057621389266&amp"
+          frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div class="col-md-6">
+        <div class="wow fadeInUp" data-wow-delay="0.2s">
+          <form method="get" action="views/contact_success.html" class="spa-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Tu nombre"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,60}$">
+                  <label for="name">Tu nombre</label>
+                  <div class="invalid-feedback">Ingresa un nombre válido (solo letras y espacios, mínimo 2 caracteres).</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Tu correo"
+                    required>
+                  <label for="email">Tu correo</label>
+                  <div class="invalid-feedback">Ingresa un correo válido.</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Tu número de celular"
+                    required
+                    inputmode="tel"
+                    pattern="^[0-9]{10}$"
+                    title="Ingrese sólo los 10 dígitos">
+                  <label for="phone">Número de celular</label>
+                  <div class="invalid-feedback">Ingresa un número de celular válido</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="Asunto"
+                    required
+                    minlength="5"
+                    maxlength="100">
+                  <label for="subject">Asunto</label>
+                  <div class="invalid-feedback">El asunto debe tener entre 5 y 100 caracteres.</div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    placeholder="Deja tu mensaje aquí"
+                    style="height: 150px"
+                    required
+                    minlength="10"
+                    maxlength="500">Aqui escriba lo que desea preguntar.</textarea>
+                  <label for="message">Mensaje</label>
+                  <div class="invalid-feedback">El mensaje debe tener entre 10 y 500 caracteres.</div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit">Enviar mensaje</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

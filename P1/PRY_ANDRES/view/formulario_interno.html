@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNO</title>
+    <style>
+        input[type=text]{
+            text-overflow: ellipsis;
+            /* Hace que textos largos se corten en puntos suspensivos  */
+            text-align: center;
+            /* Alinea el texto al centro */
+            border: 3px solid #74992e;
+        }
+        textarea{
+            text-indent: 30%;
+            /* Incorpora una sangria */
+            
+            /* Hace que el texto se escriba hacia arriba */
+            overflow: visible;
+        }
+        select{
+            border-block-end-color: yellow;
+            /* La parte inferior del bloque sera de color amarillo */
+            border-block-end-width: thick;
+            /* lo uso para que se note mas claro el color, hace que el borde de abajo sea mas grande */
+
+        }
+        input[type=checkbox]{
+            accent-color: #74992e;
+            /* pinta de color verde la seleccion del checkbox */
+            rotate: 45deg;
+            
+        }
+        input[type=radio]{
+            cursor: pointer;
+            /* Al poner el mause encima, envez de la tipica flecha saldra una mano */
+            width: 10%;
+            /* Hace que ocupe un espacio mas largo el input, dando la idea de que estan mas alejados */
+            
+        }
+        div, fieldset {
+            margin-bottom: 15px;
+            /* Es para evitar el uso del br a cada rato */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO CON CSS DENTRO DEL HEAD</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <div>
+                <label for="nombre">Ingresa tu nombre completo:</label>
+                <input type="text" id="nombre" name="nombre"  required placeholder="Andres Sebastian Cardenas Erazo">
+            </div>
+
+            <div>
+                 <label for="texto">Cuentame como te sientes:</label>
+                <textarea name="texto" id="texto" placeholder="Escribe detalladamente todo lo que te haya pasado en el dia y veras como desahogarte te hace bien"></textarea>
+            </div>
+
+           <div>
+                <label for="">Selecciona las universidades que te llaman la atencion:</label>
+                <select name="sel" id="sel" multiple size="2" autofocus>
+                    <option value="UCE">Universidad Central del Ecuador-UCE</option>
+                    <option value="ESPE" selected>Universidad de las Fuerzas Armadas-ESPE</option >
+                    <option value="EPN">Escuela Politecnica Nacional-EPN</option>
+                    <option value="PUCE">Pontifica Universidad Catolica del Ecuador</option>
+                </select>
+           </div>
+
+            <div>
+                <label for="si">Desea recibir promociones a su correo?</label>
+                <input type="checkbox" id="si" name="promocion" value="si" checked>
+            </div>
+
+            <fieldset>
+                <legend>Que tipo de programador se considera?</legend>
+                <label for="senior">SENIOR</label>
+                <input type="radio" id="senior" name="tipo_programador" value="senior" >
+                <label for="junior">JUNIOR</label>
+                <input type="radio" id="junior" name="tipo_programador" value="junior">
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+
+            <textarea name="" id="">wasa1</textarea>
+            <textarea name="" id="" style="minwidth: 800; minheight: 800;">wasa2</textarea>
+        </form>
+    </main>
+    <footer>
+        <p>Formulario elaborado por Andres Cardenas, todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

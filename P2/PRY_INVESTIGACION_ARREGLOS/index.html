@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/estilos.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1>Bienvenido a la Pagina de confirmacion de tu carrito de compras</h1>
+    </header>
+    <main>
+        <div class="row">
+
+            <div class="list-group col-6">
+                <h2>Productos Seleccionados</h2>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="Leche" name="productos[]" checked />
+                    Leche
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="Huevos" name="productos[]" checked />
+                    Huevos
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="Queso" name="productos[]" />
+                    Queso
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="Mantequilla" name="productos[]" />
+                    Mantequilla
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="Pan" name="productos[]" />
+                    Pan
+                </label>
+            </div>
+
+            <div class="col-6">
+                <h2>Carrito</h2>
+                <ul class="list-group list-group-numbered" id="lista_carrito">
+                    <!-- PRODUCTOS AQUI -->
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="row mt-3 col-6">
+                <button type="button" class="btn btn-outline-danger" id="btn_actualizar">
+                    Actualizar Carrito
+                </button>
+
+            </div>
+
+            <div class="row mt-3 col-6">
+                <button type="button" class="btn btn-outline-danger" id="btn_buscar">
+                    Buscar productos seleccionados
+                </button>
+
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="">Resultados</label>
+            <p class="form-control" id="txt_resultados">
+                No se han realizado cambios
+            </p>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>Elaborado por Andres Cardenas</p>
+    </footer>
+    <script src="./public/js/carrito.js"></script>
+</body>
+
+</html>

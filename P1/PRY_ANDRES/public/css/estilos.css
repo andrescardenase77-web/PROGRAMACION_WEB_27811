@@ -1,0 +1,112 @@
+input[type=text] {
+    background-color: #eb9696;
+    /* Pone un color de fondo  */
+    font-weight: 900;
+    /* Pone negrita en las palabras */
+    padding: 10px;
+    /* Separa el texto del marco del cuadro */
+    border-radius: 8px;
+    /* Hace que las esquinas de los marcos no sean tan rectas sino un poco redondeadas */
+    text-decoration-line: underline;
+    /* Subraya el texto */
+    
+}
+
+textarea {
+    text-emphasis: "x";
+    /* Hace enfasis en el texto para que destaque */
+    border: 3px solid #007bff;
+    /* Cambia el ancho de los bordes y ajusta un color */
+    font-family: Arial, sans-serif;
+    /* El texto que se ingrese estara en la fuente Arial */
+    line-height: 1.4;
+    /* Crea una especie de interlineado para que no se vea muy amontonado el texto */
+    resize: vertical;
+    /* Permite al usuario ajustar el tamanio del bloque de texto pero solo en vertical */
+    
+}
+
+select {
+    width: 250px;
+    /* Se fija un ancho en especifico que tendran las opciones*/
+    margin-top: 5px;
+    /* Crea un espacio o margen para separarse de los elementos que estaban arriba */
+    font-size: 1.1em;
+    /* Controla el tamanio de la letra */
+    color: #e6490b;
+    /* Color del texto de las opciones*/
+    zoom: 200%;
+    /* Hace un zoom al elemento en cuestion */
+    
+}
+
+input[type=radio] {
+    transform: scale(1.5);
+    /* Multiplica por 1.5 el tamanio del circulo, osea es un 50% mas grande */
+    vertical-align: top;
+    /* Cambia la posicion del texto adyacente, en este caso lo manda para abajo */
+    height: 50px;
+    /* Hace que el input sea mas alto */
+    outline: dashed blueviolet;
+    /* Cambia el tipo de contorno del bloque de seleccion */
+    visibility: visible;
+    /* Establece si se puede ver o no */
+}
+
+input[type=checkbox] {
+    opacity: 0.4;
+    /* Cambia la opacidad, de modo que mientras mas bajo el valor menos se vera el checkbox */
+    min-width: 50px;
+    /* Fija un valor minimo del ancho, en este caso es mas grande que el del propio checkbox */
+    min-height: 30px;
+    /* Fija un valor minimo de altura, igual es mas grande que el por defecto */
+    box-shadow: 5px 5px teal;
+    /* Genera una sombra al cuadro del input, el orden es (horizontal, vertical y color) */
+    filter: brightness(500%);
+    /* Le pone un filtro de brillo alto */
+}
+
+div, fieldset {
+    margin-bottom: 15px;
+    /* Para no tener que estar poniendo br a cada rato */
+    border-image: url("../css/borde.jpg") 16 / 9 round;
+}
+
+
+.caja{
+    position: relative;
+}
+.contenido1{
+    position: relative;
+    border: dotted;
+    border-width: 5px;
+    z-index: 2;
+}
+
+.contenido2{
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+    height: 80px;
+    top: -25px;
+    
+}
+
+p{
+    border: dotted;
+    overflow: hidden;
+    max-width: 19px;
+    clear: both;
+    text-shadow: 5px 5px green;
+}
+
+table{
+    vertical-align: top;
+}
+
+img{
+    width: 10px;
+    height: 10px;
+    vertical-align: bottom;
+}
+

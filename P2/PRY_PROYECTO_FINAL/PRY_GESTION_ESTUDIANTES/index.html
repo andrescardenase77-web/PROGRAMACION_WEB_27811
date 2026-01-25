@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="container text-center">
+        <h1>Sistema Web de Gestión de Estudiantes</h1>
+    </header>
+
+    <main class="container">
+
+        <div class="row border border-black mb-3">
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2>Ingresar Estudiante</h2>
+                <form id="formulario">
+                    <div class="mb-3">
+                        <label for="txt_nombre" class="form-label">Nombre del Estudiante</label>
+                        <input type="text" 
+                            class="form-control" 
+                            id="txt_nombre" 
+                            aria-describedby="helpId"
+                            pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+$"
+                            placeholder="Andres" required/>
+                        <small class="text-muted">Ingrese solo letras</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="txt_nota" class="form-label">Nota del Estudiante</label>
+                        <input type="number" id="txt_nota" class="form-control" min="0" max="10" step="0.01"
+                            aria-describedby="passwordHelpInline" placeholder="9" required>
+                        <small class="text-muted">Debe ser un número entre 0 y 10</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" id="btn_agregar" class="btn btn-primary w-100">
+                            Agregar Estudiante
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-borderless table-primary align-middle">
+                        <thead class="table-light">
+                            <caption>
+                                Lista Estudiantes
+                            </caption>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Nota</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider" id="cuerpo_tabla_estudiantes">
+                            <!-- Lista de Estudiantes -->
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Total de estudiantes</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            El numero total de estudiantes en el curso es de:
+                            <span id="txt_numero_estudiantes"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Estudiantes Aprobados</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            El numero total de estudiantes aprobados es de:
+                            <span id="txt_aprobados"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">Estudiantes Reprobados</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            El numero total de estudiantes reprobados es de:
+                            <span id="txt_reprobados"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card text-dark bg-warning mb-3">
+                    <div class="card-header">Estudiantes en Supletorio</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            El numero total de estudiantes en supletorio es de:
+                            <span id="txt_supletorio"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-header">Promedio del Curso</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            El promedio general del curso es:
+                            <span id="txt_promedio"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header">Estado del curso</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            El estado actual del curso es:
+                            <span id="txt_estado_curso"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container text-center">
+        <p>Elaborado por Nelson Andino, Andres Cardenas y Gabriel Molina</p>
+    </footer>
+
+    <script src="./public/js/gestion_estudiantes.js"></script>
+</body>
+
+</html>

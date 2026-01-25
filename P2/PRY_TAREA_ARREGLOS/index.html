@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Evaluación de Estudiantes</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/estilos.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1>Sistema de Evaluación de Estudiantes</h1>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-4">
+                <h2>Lista de Aprobados</h2>
+                <ul class="list-group" id="lista_aprobados">
+                    <!-- Elementos de la lista -->
+                </ul>
+            </div>
+
+            <div class="col-4">
+                <h2>Lista de Supletorios</h2>
+                <ul class="list-group" id="lista_supletorios">
+                    <!-- Elementos de la lista -->
+                </ul>
+            </div>
+
+            <div class="col-4">
+                <h2>Lista de Reprobados</h2>
+                <ul class="list-group" id="lista_reprobados">
+                    <!-- Elementos de la lista -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="row border border-black mt-3 mb-3">
+            <div class="mb-3  col-4">
+                <label for="txt_total_aprobados" class="form-label">Total de Aprobados</label>
+                <input
+                    type="number"
+                    class="form-control bg-success"
+                    name=""
+                    id="txt_total_aprobados"
+                    aria-describedby="helpId"
+                    placeholder="0"
+                    disabled
+                />
+            </div>
+
+            <div class="mb-3  col-4">
+                <label for="txt_total_supletorios" class="form-label">Total de Supletorios</label>
+                <input
+                    type="number"
+                    class="form-control bg-warning"
+                    name=""
+                    id="txt_total_supletorios"
+                    aria-describedby="helpId"
+                    placeholder="0"
+                    disabled
+                />
+            </div>
+
+            <div class="mb-3  col-4">
+                <label for="txt_total_reprobados" class="form-label">Total de Reprobados</label>
+                <input
+                    type="number"
+                    class="form-control bg-danger"
+                    name=""
+                    id="txt_total_reprobados"
+                    aria-describedby="helpId"
+                    placeholder="0"
+                    disabled
+                />
+            </div>
+
+            <div class="col-6">
+                <div class="mb-3 ">
+                    <label for="txt_promedio" class="form-label">Promedio del Curso</label>
+                    <input
+                        type="number"
+                        class="form-control bg-info"
+                        name=""
+                        id="txt_promedio"
+                        aria-describedby="helpId"
+                        placeholder="0"
+                        disabled
+                    />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="mb-3 ">
+                    <label for="txt_estado_curso" class="form-label">Estado del Curso</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="txt_estado_curso"
+                        aria-describedby="helpId"
+                        placeholder="Por definir"
+                        disabled
+                    />
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Elaborado por Andres Cardenas</p>
+    </footer>
+
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>

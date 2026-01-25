@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURA</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Conversiones Temperaturas</h1>
+    </header>
+    <main>
+        <div class="col-12 form-floating mb-3">
+            <input type="number" class="form-control" id="temperatura" placeholder="25">
+            <label for="temperatura">Ingrese su temperatura</label>
+
+            <div class="d-grid gap-2">
+                    <button type="button" id="btn_transformar" class="btn btn-primary">
+                        Convertir
+                    </button>
+                </div>
+            <h1>
+                Centigrados
+                <h1 id="centigrados">0</h1>
+            </h1>
+            <h1>
+                Farenheit
+                <h1 id="faren">32</h1>
+            </h1>
+        </div>
+    </main>
+    <footer>
+        Hecho por A.C
+    </footer>
+    <script src="./public/js/temp.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

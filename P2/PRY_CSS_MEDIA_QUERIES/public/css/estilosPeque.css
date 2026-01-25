@@ -1,0 +1,61 @@
+@media (min-width: 0px) and (max-width: 479px){
+    *{
+        background-image: url(https://img.freepik.com/vector-gratis/lineas-dinamicas-fondo-estilo-papel_23-2149008629.jpg?semt=ais_hybrid&w=740&q=80);
+    }
+    
+    h1{
+        background-color: blueviolet;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    th{
+        color: red;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    tr{
+        font-size: medium;
+        font-family: 'Courier New', Courier, monospace;
+        color: greenyellow;
+    }
+
+    input{
+        font-size: small;
+        color: cornflowerblue;
+        font-weight: bold;
+    }
+
+    input[type=checkbox]{
+        accent-color: green;
+    }
+
+    input[type=radio]{
+        accent-color: red;
+    }
+
+    footer{
+        font-weight: 900;
+        color: white;
+        font-style: oblique;
+        text-decoration-line: underline;
+    }
+
+    nav{
+        background: linear-gradient(50deg, yellow, green);
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 8px 15px;
+        border-radius: 30px;        
+        transition: 0.3s;
+    }
+
+    a{
+        background-color: white;
+        color: blue;
+        text-decoration: none;
+    }
+}

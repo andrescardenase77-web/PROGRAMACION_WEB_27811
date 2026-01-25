@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS EN PAGINA</title>
+    <style>
+        /* AFECTA A TODOS LOS ELEMENTOS DE LA PAGINA */
+        *{
+            color: blue;
+        }
+
+        /* POR ETIQUETA */
+        h1{
+            color: brown;
+            font-size: 12px;
+        }
+        p{
+            color:rgba(31, 56, 83, 0.9); /*ese 0.9 pusiste tu y es la transparencia */
+            font-weight: bold;
+            font-size: 10px;
+        }
+        /* POR CLASE */
+        .botones-personalizados{
+            background-color: aqua;
+            border-radius: 0px;
+            width: 100%;
+        }
+        /* POR ID, SOLO APLICA A UN ELEMENTO, NO PONGAS EN MAS DE UNO */
+        #boton-unico{
+            background-color: blueviolet;
+            color: white;
+            width: 50%;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./public/css/boton-enviar.css">
+</head>
+<body>
+    <h1>HOLA MUNDO</h1>
+    <h1>SALUD2</h1>
+    <p>como estan?</p>
+    <hr>
+    <button class="botones-personalizados">BOTON1</button>
+    <button class="botones-personalizados">BOTON2</button>
+    <button class="botones-personalizados" id="boton-unico">BOTON3</button>
+    <!-- UNA ETIQUETA PUEDE PERTENECER A MAS DE UNA CLASE, SOLO ESCRIBES clase1 clase2 -->
+     <button class="botones-personalizados boton-enviar">ENVIAR</button>
+</body>
+</html>

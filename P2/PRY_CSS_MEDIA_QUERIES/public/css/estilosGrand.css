@@ -1,0 +1,59 @@
+@media (min-width: 769px) and (max-width: 1669px){
+    
+
+    h1{
+        color:chartreuse;
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+    html{
+        background-color: cornflowerblue;
+    }
+    
+    table{
+        background-color: aquamarine;
+        padding: 10%;
+        align-content: center;
+    }
+
+    th{
+        font-size: 30px;
+    }
+
+    label{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-variant: small-caps;
+        text-align: center;
+        color: crimson;
+    }
+
+    input{
+        font-style: italic;
+        font-size: x-large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    input[type="reset"]{
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    input[type="reset"]{
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    input[type="submit"]{
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+    }
+    
+
+}

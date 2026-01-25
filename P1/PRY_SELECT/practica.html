@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario para registrar un estudiante en carrera</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <label for="cedula">INGRESE SU CEDULA</label >
+            <input type="text" id="cedula" name="cedula"  pattern="[0-9]{10}"  placeholder="0602050312" required>
+            <br>
+
+            <label for="fecha_nac">SELECCIONA TU FECHA DE NACIMIENTO</label>
+            <input type="date" id="fecha_nac" name="fecha_nac"  min="2005-10-27" max="2010-10-27" value="2005-10-27" required>
+            <br>
+
+            <!-- CHECKBOX -->
+            <label for="">SELECCIONA 5 MATERIAS: </label>
+            <br>
+
+            <label for="matematicas">MATEMATICAS</label>
+            <input type="checkbox" id="matematicas" name="materias[]" checked required>
+            <label for="lengua">LENGUAJE</label>
+            <input type="checkbox" id="lengua" name="materias[]" checked required>
+            <label for="natu">NATURALES</label>
+            <input type="checkbox" id="natu" name="materias[]" checked required>
+            <label for="sociales">SOCIALES</label>
+            <input type="checkbox" id="sociales" name="materias[]" checked required>
+            <label for="fisica">FISICA</label>
+            <input type="checkbox" id="fisica" name="materias[]" checked required>
+            <label for="astro">ASTRONOMIA</label>
+            <input type="checkbox" id="astro" name="materias[]" disabled>
+            <br>
+
+            <!-- SELECT -->
+             <select name="materias2" id="materias2" multiple size="5" autofocus required>
+                <option value="mates" selected >MATEMATICAS</option>
+                <option value="lengu" selected >LENGUAJE</option>
+                <option value="naturales" selected >NATURALES</option>
+                <option value="social" selected >SOCIALES</option>
+                <option value="fisi" selected >FISICA</option>
+                <option value="astronomia" disabled>ASTRONOMIA</option>
+             </select>
+             <br>
+
+            <label for="hoja_vida">SUBE TU HOJA DE VIDA</label>
+            <input type="file" name="hoja_vida" id="hoja_vida"  accept="application/pdf" required>
+            <br>
+
+            <label for="id_banner">GENERA TU ID</label>
+            <input type="text" name="id_banner" id="id_banner" pattern="[A-Z]{3}[1-9]{5}" required placeholder="LMD12345">
+            <br>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Formulario corregido, o al menos se intento</p>
+    </footer>
+</body>
+</html>

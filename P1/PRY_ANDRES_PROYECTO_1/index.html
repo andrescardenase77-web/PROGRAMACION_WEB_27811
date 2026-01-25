@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen P1</title>
+    <link rel="stylesheet" href="./public/vendor/bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro al Club de Aventureros Digitales</h1>
+        <h2>Club solo para los mejores</h2>
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+            <li class="nav-item">
+                <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab2Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Actividades</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab3Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Contacto</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+
+            </div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        </div>
+
+    </header>
+    <main>
+        <h2>FORMULARIO</h2>
+        <form action="server.html" method="get">
+            <div cla="mb-3">
+                <label for="nom">Nombre</label>
+                <input type="text" name="nom" id="nom" required minlength="5" maxlength="30"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]+" value="Andres" placeholder="Andres Cardenas"
+                    title="Solo letras y espacios">
+            </div>
+
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" name="correo" id="correo" aria-describedby="emailHelpId"
+                    placeholder="abc@mail.com" required value="abc@gmail.com" title="Correo con @"/>
+            </div>
+
+            <div class="mb-3">
+                <label for="contra" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="contra" id="contra" placeholder="contraseña" required
+                    minlength="8" title="Al menos una mayúscula, una minúscula, un número y un símbolo y minimo 8 caracteres "
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+                    value="Aa1@aaaaa"
+                />
+                <small id="reglasContrasena" class="form-text text-muted"
+                >Al menos una mayúscula, una minúscula, un número y un símbolo y minimo 8 caracteres</small>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="contra2" class="form-label">Confirmar contraseña</label>
+                <input type="password" class="form-control" name="contra2" id="contra2" placeholder="contraseña"
+                    required minlength="8" title="Al menos una mayúscula, una minúscula, un número y un símbolo y minimo 8 caracteres"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+                    value="Aa1@aaaaa"
+                />
+                <small id="reglasContrasena2" class="form-text text-muted"
+                >Al menos una mayúscula, una minúscula, un número y un símbolo y minimo 8 caracteres</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" name="edad" id="edad" aria-describedby="helpId"
+                    placeholder="15" min="10" max="100" required value="19" title="Un numero"/>
+            </div>
+
+            <fieldset>
+                <legend>Selecciona tu pais</legend>
+                <div class="mb-3">
+                    <select class="form-select form-select-lg" name="pais" id="pais" required>
+                        <option selected>ECUADOR</option>
+                        <option value="">PERU</option>
+                        <option value="">BRAZIL</option>
+                        <option value="">MEXICO</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona tu Genero</legend>
+                <label class="form-check-label" for="femenino">Femenino</label>
+                <input class="form-check-input" type="radio" name="genero" id="femenino" required value="Femenino" />
+                <label class="form-check-label" for="masculino">Masculino</label>
+                <input class="form-check-input" type="radio" name="genero" id="masculino" checked required value="Masculino" />
+           </fieldset>
+
+           <fieldset>
+            <legend>Terminos y Condiciones</legend>
+            <label class="form-check-label" for="acepto"> ¿Aceptas los terminos? </label>
+            <input class="form-check-input" type="checkbox" value="acepto" id="acepto" required checked/>
+           </fieldset>
+
+           <button
+            type="reset"
+            class="btn btn-primary"
+           >
+            Reestablecer Formulario
+           </button>
+
+           <button
+            type="submit"
+            class="btn btn-primary"
+           >
+            Enviar Formulario
+           </button>
+        </form>
+        <aside>
+            <!-- lista de beneficios de unirse al club -->
+             <h2>Beneficios de unirse al club</h2>
+             <ol>
+                <li>Comunicacion</li>
+                <ul>
+                    <li>
+                        Acceso a un discord 
+                    </li>
+                    <li>
+                        Acceso a un grupo de Facebook
+                    </li>
+                </ul>
+                <li>
+                    Charlas todos los dias
+                </li>
+                <li>
+                    Inclusion en proyectos de desarrollo
+                </li>
+             </ol>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Autor: Andres Cardenas, todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

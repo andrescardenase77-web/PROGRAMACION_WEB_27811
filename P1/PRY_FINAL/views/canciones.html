@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Ecuatoriana - Galería</title>
+    
+    <style>
+        body {
+            /* Usamos un fondo oscuro sólido en lugar de la imagen de instrumentos */
+            /* Esto es CRUCIAL para que el texto sea legible. */
+            font-family: 'Poppins', 'Open Sans', sans-serif;
+            background-color: #121212; /* Fondo negro/gris muy oscuro */
+            color: #E0E0E0;            /* Texto principal claro */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #FFFFFF; /* Títulos blancos */
+            font-weight: 600;
+        }
+
+        p {
+            text-align: center;
+            color: #AAAAAA; /* Texto de párrafo más suave */
+        }
+
+        /* --- Estilos de los Filtros (Botones) --- */
+        #filtro-generos {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #filtro-generos button {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            background-color: #252525; /* Fondo de botón oscuro */
+            color: #E0E0E0;            /* Texto de botón claro */
+            border: 1px solid #444;    /* Borde sutil */
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #filtro-generos button:hover {
+            background-color: #333;
+            border-color: #666;
+        }
+
+        /* Estilo del botón activo (usamos un rojo similar al de tu otro diseño) */
+        #filtro-generos button.activo {
+            background-color: #BF0A30; 
+            color: #fff;
+            border-color: #BF0A30;
+        }
+
+        /* --- Estilos de las Canciones (Grid) --- */
+        #lista-canciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .cancion-card {
+            /* ¡ESTO ES LO MÁS IMPORTANTE! */
+            /* Cada canción tiene su propia "tarjeta" con fondo */
+            background-color: #1E1E1E; /* Fondo de tarjeta (un poco más claro que el body) */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            overflow: hidden; 
+            transition: transform 0.3s ease;
+        }
+
+        .cancion-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            background-color: #000; /* Fondo negro mientras carga el video */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .info-cancion {
+            padding: 20px;
+        }
+
+        .info-cancion h3 {
+            margin: 0 0 5px 0;
+            color: #FFFFFF; /* Título de canción blanco */
+        }
+
+        .info-cancion p {
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+            color: #AAAAAA; /* Artista en gris claro */
+            text-align: left; /* Alineamos el texto de la tarjeta a la izquierda */
+        }
+        
+        /* Centramos los h3, pero mantenemos los <p> a la izquierda */
+        .info-cancion h3 {
+           text-align: left;
+        }
+
+        .genero-tag {
+            display: inline-block;
+            background-color: #333; /* Etiqueta de género */
+            color: #E0E0E0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Galería de Música Ecuatoriana</h1>
+        <p style="text-align: center;">Selecciona un género para filtrar las canciones.</p>
+
+        <div id="filtro-generos">
+            <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+            <button class="filtro-btn" data-filtro="pasillo">Pasillo</button>
+            <button class="filtro-btn" data-filtro="sanjuanito">Sanjuanito</button>
+            <button class="filtro-btn" data-filtro="albazo">Albazo</button>
+            <button class="filtro-btn" data-filtro="bomba">Bomba</button>
+        </div>
+
+        <div id="lista-canciones">
+
+            <div class="cancion-card" data-genero="pasillo">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/gSdiq0E2S5A" title="Julio Jaramillo - Nuestro Juramento" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-cancion">
+                    <h3>Nuestro Juramento</h3>
+                    <p>Julio Jaramillo</p>
+                    <span class="genero-tag">Pasillo</span>
+                </div>
+            </div>
+            <div class="cancion-card" data-genero="sanjuanito">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5-TUPcFwBks" title="Pobre Corazón - Sanjuanito" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-cancion">
+                    <h3>Pobre Corazón</h3>
+                    <p>Música Tradicional</p>
+                    <span class="genero-tag">Sanjuanito</span>
+                </div>
+            </div>
+
+            <div class="cancion-card" data-genero="albazo">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/i0-zEaFWbPM" title="El Pajarillo - Albazo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-cancion">
+                    <h3>El Pajarillo</h3>
+                    <p>Dúo Benitez y Valencia</p>
+                    <span class="genero-tag">Albazo</span>
+                </div>
+            </div>
+
+            <div class="cancion-card" data-genero="bomba">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/RZWf2nOqO04" title="La Bomba - Carpuela" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-cancion">
+                    <h3>Carpuela</h3>
+                    <p>Bomba del Chota</p>
+                    <span class="genero-tag">Bomba</span>
+                </div>
+            </div>
+            
+             <div class="cancion-card" data-genero="pasillo">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/xWtL9-I0nBw" title="El Aguacate - Pasillo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-cancion">
+                    <h3>El Aguacate</h3>
+                    <p>Dúo Benitez y Valencia</p>
+                    <span class="genero-tag">Pasillo</span>
+                </div>
+            </div>
+            
+        </div> </div> <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const botonesFiltro = document.querySelectorAll('.filtro-btn');
+            
+            const canciones = document.querySelectorAll('.cancion-card');
+
+            botonesFiltro.forEach(function(boton) {
+                boton.addEventListener('click', function() {
+                    
+  
+                    botonesFiltro.forEach(btn => btn.classList.remove('activo'));
+                    this.classList.add('activo');
+
+                    const filtro = this.getAttribute('data-filtro');
+
+                    canciones.forEach(function(cancion) {
+                        const genero = cancion.getAttribute('data-genero');
+
+                        if (filtro === 'todos' || filtro === genero) {
+                            cancion.style.display = 'block'; 
+                        } else {
+                            cancion.style.display = 'none';  
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

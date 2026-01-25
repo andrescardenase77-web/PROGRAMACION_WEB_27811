@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen P2</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="container text-center">
+    <header>
+        <h1>Examen P2</h1>
+    </header>
+    <main>
+        <div class="card border-primary">
+            <div class="card-body">
+                <h4 class="card-title">Lista de Productos</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-borderless table-primary align-middle">
+                        <thead class="table-light">
+                            <caption>
+                                Listado
+                            </caption>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr class="table-primary">
+                                <td scope="row" id="nombre1">N1</td>
+                                <td id="precio1">P1</td>
+                                <td id="categoria1">C1</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td scope="row" id="nombre2">N2</td>
+                                <td id="precio2">P2</td>
+                                <td id="categoria2">C2</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td scope="row" id="nombre3">N3</td>
+                                <td id="precio3">P3</td>
+                                <td id="categoria3">C3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+
+                    <div class="row">
+                        <div class="d-grid gap-2 col-6">
+                            <button type="button" name="" id="btn_calcular" class="btn btn-primary">
+                                Calcular Total
+                            </button>
+                        </div>
+                        <p id="total" class="col-6">Total</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Elaborado por Andres Cardenas</p>
+    </footer>
+    <script src="./public/js/codigo.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

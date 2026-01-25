@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTS</title>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIOS</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+
+            <label for="iden">GENERA TU ID</label>
+            <input type="text" name="iden" id="iden" pattern="[A-Z]{3}" required>
+            <!-- SELECT PARA FORM -->
+             <!-- EL FIELDSET ES PARA ENCERRARLO EN UNA CAJOTA -->
+             <fieldset>
+                <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+                <!-- creo que aqui es mejor un legend -->
+                <legend>LENGUAJE DE PROGRAMACION</legend>
+                <select name="lenguaje_programacion" id="lenguaje_programacion">
+                    <option value="c_mas_mas">C++</option>
+                    <option value="java">JAVA</option>
+                    <option value="python">PYTHON</option>
+                    <option value="html" disabled>HTML</option>
+                </select>
+
+                <input type="date">
+             </fieldset>
+             
+            
+
+             <br>
+
+             <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITA</label>
+
+             <!-- por el multiple en el name ponemos como array, como un checkbox -->
+              <!-- el autofocus es para que senale marcado de azul la opcion con selected 
+               el size es para que muestre opciones de 2 en 2
+               el selected es para poner uno por defecto
+               -->
+
+             <select name="musica_favorita[]" id="musica_favorita" multiple required size="2" autofocus>
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="loba">SHAKIRA LOBA</option>
+                    <option value="anoche" selected>BAD BUNNY ANOCHE</option>
+                    <option value="all_of_me" disabled>JOHN LEJON ALL OF ME</option>
+                    <option value="triste">JOSE JOSE TRISTE</option>
+                </optgroup>
+
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="loba">SHAKIRA LOBA</option>
+                    <option value="anoche" selected>BAD BUNNY ANOCHE</option>
+                    <option value="all_of_me" disabled>JOHN LEJON ALL OF ME</option>
+                    <option value="triste">JOSE JOSE TRISTE</option>
+                </optgroup>
+             </select>
+
+             <br>
+
+             <!-- TEXT AREA, no tiene value -->
+              <label for="frase_motivadora">INGRESE SU FRASE DEL DIA DE HOY</label>
+              <textarea name="frase_motivadora" id="frase_motivadora" rows="5" cols="18" required>
+                Buenos dias estrellitas, la tierra les dice hola!!!!!!!!!
+              </textarea>
+
+              <!-- HIDDEN -->
+               <input type="hidden" name="cedula" value="0602050312">
+
+            <button type="submit">
+                ENVIAR AL SERVIDOR
+            </button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

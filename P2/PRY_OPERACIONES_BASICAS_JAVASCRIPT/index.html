@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES BASICAS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Operaciones Basicas</h1>
+    </header>
+    <main class="container">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-sm-3">
+                SUMA
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_numero_1" placeholder="0.0">
+                    <label for="txt_numero_1">INGRESE NUMERO 1</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_numero_2" placeholder="0.0">
+                    <label for="txt_numero_2">INGRESE NUMERO 2</label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" id="btn_sumar" class="btn btn-primary">
+                        Sumar
+                    </button>
+                </div>
+
+                <h1 id="txt_resultado_suma">0.00</h1>
+            </div>
+
+            <div class="col-sm-3">
+                RESTA
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_rest_numero_1" placeholder="0.0">
+                    <label for="txt_rest_numero_1">INGRESE NUMERO 1</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_rest_numero_2" placeholder="0.0">
+                    <label for="txt_rest_numero_2">INGRESE NUMERO 2</label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" id="btn_restar" class="btn btn-primary">
+                        Restar
+                    </button>
+                </div>
+
+                <h1 id="txt_resultado_resta">0.00</h1>
+            </div>
+
+            <div class="col-sm-3">
+                MULTIPLICACION
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_mult_numero_1" placeholder="0.0">
+                    <label for="txt_mult_numero_1">INGRESE NUMERO 1</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_mult_numero_2" placeholder="0.0">
+                    <label for="txt_mult_numero_2">INGRESE NUMERO 2</label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" id="btn_multiplicar" class="btn btn-primary">
+                        Multiplicar
+                    </button>
+                </div>
+
+                <h1 id="txt_resultado_mult">0.00</h1>
+            </div>
+
+            <div class="col-sm-3">
+                DIVISION
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="txt_div_numero_1" placeholder="0.0">
+                    <label for="txt_div_numero_1">INGRESE NUMERO 1</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="txt_div_numero_2" placeholder="0.0">
+                    <label for="txt_div_numero_2">INGRESE NUMERO 2</label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" id="btn_dividir" class="btn btn-primary">
+                        Dividir
+                    </button>
+                </div>
+
+                <h1 id="txt_resultado_div">0.00</h1>
+            </div>
+        </div>
+
+        <!-- EJERCICIO CLASE -->
+
+        <a
+            name=""
+            id=""
+            class="btn btn-primary"
+            href="./temperatura.html"
+            role="button"
+            >Temperaturas</a
+        >
+        
+
+    </main>
+    <footer>
+        c 2025 ESPE
+    </footer>
+
+    <script src="./public/js/dividir.js"></script>
+
+    <script src="./public/js/multiplicar.js"></script>
+
+    <script src="./public/js/restar.js"></script>
+
+    <script src="./public/js/sumar.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

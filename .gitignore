@@ -1,0 +1,8 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Archivos temporales o de sistema
+.DS_Store

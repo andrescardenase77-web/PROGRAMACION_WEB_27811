@@ -1,0 +1,1 @@
+Este es mi primer archivo en linux. Puedo decir que fue casi un exito, olvide usar bien vs code 
