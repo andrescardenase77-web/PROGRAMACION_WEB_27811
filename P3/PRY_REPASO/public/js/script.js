@@ -142,4 +142,4 @@ function crearVehiculos(cantidad){
     }
 }
 
-crearVehiculos(3);
+//crearVehiculos(3);

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba P3-Usuarios</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.rtl.min.css"
+        integrity="sha512-4W9f7EnJgM33kD11Ux2XNF9DSpJ7LoQXCvBNhzKTorRSyjPHmjXhHMZMafIYqYvTNWahUk2ulNsarMMLDEv4zA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.23.0/sweetalert2.min.css"
+        integrity="sha512-Ivy7sPrd6LPp20adiK3al16GBelPtqswhJnyXuha3kGtmQ1G2qWpjuipfVDaZUwH26b3RDe8x707asEpvxl7iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css"></head>
+<body>
+
+    <nav class="navbar bg-body-tertiary bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">USUARIOS</a>
+        </div>
+    </nav>
+
+    <h1>
+        Formulario CRUD de USUARIOS G2
+    </h1>
+
+
+
+    <form action="get">
+        <label for="">Ingrese ID:</label>
+        <input type="number" id="txt_id">
+
+        <label for="">Ingrese username:</label>
+        <input type="text" id="txt_username">
+
+        <label for="">Ingrese email:</label>
+        <input type="email" id="txt_email">
+
+        <label for="">Ingrese password:</label>
+        <input type="password" id="txt_password">
+    </form>
+
+    <button id="txt_boton_obtener"> Obtener usuarios</button>
+    <button id="txt_boton_insertar"> Insertar usuario</button>
+    <button id="txt_boton_actualizar"> Actualizar usuario</button>
+    <button id="txt_boton_eliminar"> Eliminar usuario</button>
+
+    <p id="txt_resultados"></p>
+    
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
